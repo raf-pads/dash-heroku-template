@@ -13,7 +13,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
-import plotly.offline as pyo 
+#import plotly.offline as pyo 
 #pyo.init_notebook_mode()
 
 
@@ -171,6 +171,4 @@ app.layout = html.Div(
 )
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
-    
-# , port=8051, host='0.0.0.0'
+    app.run_server(debug=True, port = 5023,use_reloader=False)
