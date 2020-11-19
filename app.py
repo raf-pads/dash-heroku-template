@@ -1,3 +1,5 @@
+%%capture
+
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
@@ -14,7 +16,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 import plotly.offline as pyo 
 #pyo.init_notebook_mode()
 
-%%capture
+
 gss = pd.read_csv("https://github.com/jkropko/DS-6001/raw/master/localdata/gss2018.csv",
                  encoding='cp1252', na_values=['IAP','IAP,DK,NA,uncodeable', 'NOT SURE',
                                                'DK', 'IAP, DK, NA, uncodeable', '.a', "CAN'T CHOOSE"])
