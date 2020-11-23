@@ -1,4 +1,4 @@
-%%capture
+#%%capture
 
 import numpy as np
 import pandas as pd
@@ -171,4 +171,4 @@ app.layout = html.Div(
 )
 
 if __name__ == '__main__':
-    app.run_server(debug=True, port = 5023,use_reloader=False)
+    app.run_server(debug=True, port = 5002, use_reloader=False)
